@@ -1,0 +1,10 @@
+.cursor {
+  cursor: pointer;
+}
+.footer-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.border-design {
+  border-color: #2d343f !important;
+}
