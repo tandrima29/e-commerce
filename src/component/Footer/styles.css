@@ -6,5 +6,15 @@
   cursor: pointer;
 }
 .border-design {
-  border-color: #2d343f !important;
+  border-radius: 1px;
+  border-color: #2d343f;
+}
+.text-color1 {
+  color: #dcdde1;
+}
+.back-color {
+  background-color: #1d242d;
+}
+.back-color1 {
+  background-color: #212934;
 }

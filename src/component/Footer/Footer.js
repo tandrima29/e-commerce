@@ -7,82 +7,84 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import CustomPara from "./CustomPara";
 
+const paraDetails = [
+  {
+    description: "Luxury",
+  },
+  {
+    description: "Sport-Wear",
+  },
+  {
+    description: "Men's Shoes",
+  },
+  {
+    description: " Women's Shoes",
+  },
+  {
+    description: "Popular Dress",
+  },
+  {
+    description2: "Home ",
+  },
+  {
+    description2: "Shop Location",
+  },
+  {
+    description2: "FAQs",
+  },
+  {
+    description2: "Contact",
+  },
+];
 export default function Footer() {
   return (
-    <footer className="bg-dark">
+    <footer className="back-color1">
       <div className="container">
         <div className="row">
           <div className="col-md-4 pt-5">
-            <h2 className="  text-success border-bottom pb-3 border-design ">
-              Zay Shop
-            </h2>
+            <h2 className="  text-success  pb-3 border-design ">Zay Shop</h2>
             <p>
-              <span className="cursor text-light">
-                <FaMapMarkerAlt className="footer-icon" size={"20px"} />
+              <span className="cursor text-color1">
+                <FaMapMarkerAlt
+                  className="footer-icon cursor text-color1"
+                  size={"20px"}
+                />
                 123 Consectetur at ligula 10660
               </span>
             </p>
             <p>
-              <span className=" cursor text-light">
-                <FaPhone className="footer-icon" size={"20px"} /> 010-020-0340
+              <span className=" cursor text-color1">
+                <FaPhone className="footer-icon " size={"20px"} /> 010-020-0340
               </span>
             </p>
             <p>
-              <span className=" cursor text-light">
-                <FaEnvelope className="footer-icon" size={"20px"} />{" "}
+              <span className=" cursor text-color1">
+                <FaEnvelope className="footer-icon " size={"20px"} />{" "}
                 info@company.com
               </span>
             </p>
           </div>
           <div className="col-md-4 pt-5">
-            <h2 class=" text-light border-bottom pb-3 border-design">
-              Products
-            </h2>
-            <p>
-              <span className="cursor text-light">Luxury</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Sport-Wear</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Men's Shoes</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Men's Shoes</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Women's Shoes</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Popular Dress</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Gym Accessories</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Sport Shoes</span>
-            </p>
+            <h2 class=" text-color1  pb-3 border-design">Products</h2>
+            {paraDetails.map((details, index) => {
+              return (
+                <div key={index}>
+                  <CustomPara para={details.description}></CustomPara>
+                </div>
+              );
+            })}
           </div>
           <div className="col-md-4 pt-5">
-            <h2 class="text-light border-bottom pb-3 border-design">
-              Further Info
-            </h2>
-            <p>
-              <span className="cursor text-light">Home</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> About Us</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Shop Locations</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> FAQs</span>
-            </p>
-            <p>
-              <span className=" cursor text-light"> Contact</span>
-            </p>
+            <h2 class="text-color1  pb-3 border-design">Further Info</h2>
+            {paraDetails.map((details, index) => {
+              return (
+                <div key={index}>
+                  <CustomPara para={details.description2}></CustomPara>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="row text-light mb-4">
@@ -91,33 +93,37 @@ export default function Footer() {
           </div>
           <div className="col-auto me-auto">
             <div className="list-inline text-left footer-icons">
-              <span className="cursor">
-                <FaFacebookF className="footer-icon" size={"20px"} />
-              </span>
-              <span className="cursor">
-                <FaInstagram className="footer-icon" size={"20px"} />
-              </span>
-              <span className="cursor">
-                <FaTwitter className="footer-icon" size={"20px"} />
-              </span>
-              <span className="cursor">
-                <FaLinkedin className="footer-icon" size={"20px"} />
-              </span>
+              <FaFacebookF className="footer-icon cursor" size={"20px"} />
+
+              <FaInstagram className="footer-icon cursor" size={"20px"} />
+
+              <FaTwitter className="footer-icon cursor" size={"20px"} />
+
+              <FaLinkedin className="footer-icon cursor" size={"20px"} />
             </div>
           </div>
           <div className="col-auto">
-            <label className="sr-only" for="subscribeEmail">
-              Email address
-            </label>
+            <label className="sr-only" for="subscribeEmail"></label>
             <div className="input-group mb-2">
               <input
                 type="text"
                 class="form-control bg-dark border-design"
                 placeholder="Email address"
               ></input>
-              <div className="input-group-text btn-success text-light">
+              <div className="input-group-text btn btn-success text-light">
                 Subscribe
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 back-color py-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-left text-light">
+                Copyright &copy; 2021 Company Name | Designed by TemplateMo
+              </p>
             </div>
           </div>
         </div>
