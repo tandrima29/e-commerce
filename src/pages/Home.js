@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "../component/hero-section/Hero";
 import Categories from "../component/categories/Categories";
 import ProductCard from "../component/product-card/ProductCard";
 
