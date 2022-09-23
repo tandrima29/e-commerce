@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "../app/global.css";
+import "../../app/global.css";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { FaCartArrowDown } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
