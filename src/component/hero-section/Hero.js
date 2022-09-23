@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import Img1 from "../../Images/img1.jpg";
-import Img2 from "../../Images/img2.jpg";
-import Img3 from "../../Images/img3.jpg";
+import Img1 from "../../images/img1.jpg";
+import Img2 from "../../images/img2.jpg";
+import Img3 from "../../images/img3.jpg";
 import { Row, Col } from "react-bootstrap";
 import "./styles.css";
 export default function Hero() {
@@ -10,7 +10,7 @@ export default function Hero() {
       <Carousel.Item className="bg-back">
         <div className="container ">
           <div className="row p-5">
-            <div className="col-lg-6 justify-content-center align-items-center ">
+            <div className="col-lg-6  d-flex flex-column text-start justify-content-center align-items-center ">
               <h1>Repr in voluptate</h1>
               <h3> Ullamco laboris nisi ut</h3>
               <p>
@@ -30,7 +30,7 @@ export default function Hero() {
       <Carousel.Item className="bg-back">
         <div className="container">
           <div className="row p-5">
-            <div className="col-lg-6 justify-content-center align-items-center ">
+            <div className="col-lg-6 d-flex flex-column text-start  justify-content-center align-items-center ">
               <h1 className="text-success">Zay eCommerce</h1>
               <h3> Tiny and Perfect eCommerce Template</h3>
               <p>
@@ -54,8 +54,8 @@ export default function Hero() {
       <Carousel.Item className="bg-back">
         <div className="container">
           <div className="row p-5">
-            <div className="col-lg-6 justify-content-center align-items-center ">
-              <h1>Proident occaecat</h1>
+            <div className="col-lg-6  d-flex flex-column text-start justify-content-center align-items-center ">
+              <h1 className="text-start">Proident occaecat</h1>
               <h3>Aliquip ex ea commodo consequat</h3>
               <p>
                 {" "}

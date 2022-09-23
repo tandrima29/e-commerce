@@ -5,10 +5,13 @@ import ProductCard from "../component/product-card/ProductCard";
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className="mx-5">
-        <Categories />
-        <ProductCard />
+    <div>
+      <Hero />
+      <div className="container">
+        <div className="mx-5">
+          <Categories />
+          <ProductCard />
+        </div>
       </div>
     </div>
   );
