@@ -1,8 +1,8 @@
 import React from "react";
 import Categoriescard from "./Categoriescard";
-import categoryimage1 from "../images/category_img_01.jpg";
-import categoryimage2 from "../images/category_img_02.jpg";
-import categoryimage3 from "../images/category_img_03.jpg";
+import categoryimage1 from "../../images/category_img_01.jpg";
+import categoryimage2 from "../../images/category_img_02.jpg";
+import categoryimage3 from "../../images/category_img_03.jpg";
 
 export default function Categories() {
   return (
