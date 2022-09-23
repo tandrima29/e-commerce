@@ -1,6 +1,6 @@
-import Image1 from "../../Images/pic1.jpg";
-import Image2 from "../../Images/image2.jpg";
-import Image3 from "../../Images/pic3.jpg";
+import Image1 from "../../images/pic1.jpg";
+import Image2 from "../../images/image2.jpg";
+import Image3 from "../../images/pic3.jpg";
 import CustomCard from "./Card";
 
 const cardDetails = [
