@@ -92,7 +92,7 @@ export default function Footer() {
           <Col xs="12" lg="12" md="12" className="mb-3">
             <div className="w-100 my-3 border-top"></div>
           </Col>
-          <Col xs="auto" className="me-auto">
+          <Col xs="auto" className="me-auto pt-4">
             <div className="list-inline text-left footer-icons">
               <FaFacebookF className="footer-icon cursor" size={"20px"} />
 
