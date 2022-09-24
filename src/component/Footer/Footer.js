@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import CustomPara from "./CustomPara";
+import { Container, Row, Col } from "react-bootstrap";
 
 const paraDetails = [
   {
@@ -41,10 +42,10 @@ const paraDetails = [
 export default function Footer() {
   return (
     <footer className="back-color1">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4 pt-5">
-            <h2 className="  text-success  pb-3 border-design ">Zay Shop</h2>
+      <Container>
+        <Row>
+          <Col xs="12" lg="4" md="4" className="pt-5">
+            <h2 className="text-success  pb-3  ">Zay Shop</h2>
             <p>
               <span className="cursor text-color1">
                 <FaMapMarkerAlt
@@ -65,9 +66,9 @@ export default function Footer() {
                 info@company.com
               </span>
             </p>
-          </div>
-          <div className="col-md-4 pt-5">
-            <h2 class=" text-color1  pb-3 border-design">Products</h2>
+          </Col>
+          <Col xs="12" lg="4" md="4" className=" pt-5">
+            <h2 class=" text-color1  pb-3 ">Products</h2>
             {paraDetails.map((details, index) => {
               return (
                 <div key={index}>
@@ -75,9 +76,9 @@ export default function Footer() {
                 </div>
               );
             })}
-          </div>
-          <div className="col-md-4 pt-5">
-            <h2 class="text-color1  pb-3 border-design">Further Info</h2>
+          </Col>
+          <Col xs="12" lg="4" md="4" className="pt-5">
+            <h2 class="text-color1  pb-3 ">Further Info</h2>
             {paraDetails.map((details, index) => {
               return (
                 <div key={index}>
@@ -85,13 +86,13 @@ export default function Footer() {
                 </div>
               );
             })}
-          </div>
-        </div>
-        <div className="row text-light mb-4">
-          <div className="col-12 mb-3">
-            <div className="w-100 my-3 border-top border-design"></div>
-          </div>
-          <div className="col-auto me-auto">
+          </Col>
+        </Row>
+        <Row className=" text-light mb-4">
+          <Col xs="12" lg="12" md="12" className="mb-3">
+            <div className="w-100 my-3 border-top"></div>
+          </Col>
+          <Col xs="auto" className="me-auto pt-4">
             <div className="list-inline text-left footer-icons">
               <FaFacebookF className="footer-icon cursor" size={"20px"} />
 
@@ -101,32 +102,32 @@ export default function Footer() {
 
               <FaLinkedin className="footer-icon cursor" size={"20px"} />
             </div>
-          </div>
-          <div className="col-auto">
+          </Col>
+          <Col className="col-auto">
             <label className="sr-only" for="subscribeEmail"></label>
             <div className="input-group mb-2">
               <input
                 type="text"
-                class="form-control bg-dark border-design"
+                class="form-control back-color1 border-design"
                 placeholder="Email address"
               ></input>
               <div className="input-group-text btn btn-success text-light">
                 Subscribe
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-100 back-color py-3">
-        <div class="container">
-          <div class="row pt-2">
-            <div class="col-12">
-              <p class="text-left text-light">
+          </Col>
+        </Row>
+      </Container>
+      <div className="w-100 back-color py-3">
+        <Container>
+          <Row className=" pt-2">
+            <Col>
+              <p className="text-left text-light">
                 Copyright &copy; 2021 Company Name | Designed by TemplateMo
               </p>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </footer>
   );

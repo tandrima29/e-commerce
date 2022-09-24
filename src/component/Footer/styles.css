@@ -6,8 +6,7 @@
   cursor: pointer;
 }
 .border-design {
-  border-radius: 1px;
-  border-color: #2d343f;
+  border-color: #2d343f !important;
 }
 .text-color1 {
   color: #dcdde1;
@@ -16,5 +15,5 @@
   background-color: #1d242d;
 }
 .back-color1 {
-  background-color: #212934;
+  background-color: #212934 !important;
 }
