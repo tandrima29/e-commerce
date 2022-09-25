@@ -13,11 +13,11 @@ export default function Header() {
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand className="text-success mx-5" href="#home">
-            <h3>ZayShop</h3>
+            <h3>Zay</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto justify-content-between widthclass">
+            <Nav className="me-auto widthclass">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Shop</Nav.Link>
               <Nav.Link href="#link">About</Nav.Link>
@@ -32,7 +32,7 @@ export default function Header() {
               <Nav.Item>
                 <Nav.Link eventKey="link-1">
                   <FaCartArrowDown />
-                  <span className="position-absolute top-1 left-100 translate-middle badge rounded-pill bg-success text-dark">
+                  <span className="position-absolute top-1 left-100 translate-middle badge rounded-pill bg-secondary text-white">
                     7
                   </span>
                 </Nav.Link>
@@ -40,7 +40,7 @@ export default function Header() {
               <Nav.Item>
                 <Nav.Link eventKey="link-2">
                   <FaUserAlt />
-                  <span className="position-absolute top-1 left-100 translate-middle badge rounded-pill bg-success text-dark">
+                  <span className="position-absolute top-1 left-100 translate-middle badge rounded-pill bg-secondary  text-white">
                     +99
                   </span>
                 </Nav.Link>
