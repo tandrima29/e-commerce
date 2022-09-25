@@ -1,10 +1,13 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-export default function (props) {
+export default function Categoriescard(props) {
   return (
     <div>
-      <Card className="border-0">
+      <Card
+        style={{ maxWidth: "18rem", maxheight: "auto" }}
+        className="border-0"
+      >
         <Card.Img
           variant="top"
           src={props.categoryImage}

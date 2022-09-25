@@ -2,5 +2,17 @@
   max-width: 100%;
 }
 .bg-back {
-  background-color: #f2f2f2;
+  background-color: #efefef !important;
 }
+/* .carousel .carousel-control-prev-icon {
+  color: green;
+  background-color: green;
+}
+.carousel .carousel-control-next-icon {
+  color: green;
+  background-color: green;
+}
+.carousel .carousel-indicators {
+  color: green;
+  background-color: green;
+} */
