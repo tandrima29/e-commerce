@@ -9,28 +9,27 @@ export default function Hero() {
     <Carousel>
       <Carousel.Item className="bg-back">
         <div className="container ">
-          <div className="row p-5">
-            <div className="col-lg-6  d-flex flex-column text-start justify-content-center align-items-center ">
+          <Row className="p-5">
+            <Col className="d-flex flex-column text-start justify-content-center ">
               <h1>Repr in voluptate</h1>
               <h3> Ullamco laboris nisi ut</h3>
               <p>
-                {" "}
                 We bring you 100% free CSS templates for your websites. If you
                 wish to support TemplateMo, please make a small contribution via
                 PayPal or tell your friends about our website. Thank you.
               </p>
-            </div>
+            </Col>
 
-            <div className="col-lg-6">
+            <Col>
               <img className="img-fluid" src={Img1} alt="First slide" />
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </Carousel.Item>
       <Carousel.Item className="bg-back">
         <div className="container">
-          <div className="row p-5">
-            <div className="col-lg-6 d-flex flex-column text-start  justify-content-center align-items-center ">
+          <Row className="p-5">
+            <Col className="d-flex flex-column text-start  justify-content-center ">
               <h1 className="text-success">Zay eCommerce</h1>
               <h3> Tiny and Perfect eCommerce Template</h3>
               <p>
@@ -43,18 +42,21 @@ export default function Hero() {
                 <span className="text-success">Unsplash</span>
                 and <span className="text-success">Icons 8.</span>
               </p>
-            </div>
+            </Col>
 
-            <div className="col-lg-6">
+            <Col>
               <img className="img-fluid" src={Img2} alt="First slide" />
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </Carousel.Item>
       <Carousel.Item className="bg-back">
         <div className="container">
-          <div className="row p-5">
-            <div className="col-lg-6  d-flex flex-column text-start justify-content-center align-items-center ">
+          <Row className="p-5">
+            <Col
+              lg={6}
+              className="d-flex flex-column text-start justify-content-center"
+            >
               <h1 className="text-start">Proident occaecat</h1>
               <h3>Aliquip ex ea commodo consequat</h3>
               <p>
@@ -63,12 +65,12 @@ export default function Hero() {
                 commercial websites. You are not permitted to re-distribute the
                 template ZIP file in any kind of template collection websites.
               </p>
-            </div>
+            </Col>
 
-            <div className="col-lg-6">
+            <Col>
               <img className="img-fluid" src={Img3} alt="First slide" />
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
       </Carousel.Item>
     </Carousel>

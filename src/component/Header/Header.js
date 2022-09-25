@@ -13,7 +13,7 @@ export default function Header() {
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand className="text-success mx-5" href="#home">
-            <h3>ZayShop</h3>
+            <h3>Zay</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -1,3 +1,5 @@
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Image1 from "../../images/pic1.jpg";
 import Image2 from "../../images/image2.jpg";
 import Image3 from "../../images/pic3.jpg";
@@ -33,19 +35,19 @@ export default function ProductCard() {
   return (
     <div className="bg-light">
       <div className="container py-5">
-        <div className="row text-center py-3">
-          <div className="col-lg-6 m-auto">
+        <Row className="text-center py-3">
+          <Col lg={6} className="m-auto">
             <h2>Featured Product</h2>
             <p>
               Reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
-          </div>
-        </div>
-        <div className="row">
+          </Col>
+        </Row>
+        <Row>
           {cardDetails.map((details, index) => {
             return (
-              <div key={index} className="col-12 col-md-4 mb-4">
+              <Col xs={12} md={4} key={index} className="mb-4">
                 <CustomCard
                   heading={details.heading}
                   para={details.description}
@@ -53,10 +55,10 @@ export default function ProductCard() {
                   image={details.img}
                   price={details.price}
                 ></CustomCard>
-              </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </div>
     </div>
   );
