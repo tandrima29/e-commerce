@@ -6,7 +6,7 @@ import { Row, Col } from "react-bootstrap";
 import "./styles.css";
 export default function Hero() {
   return (
-    <Carousel>
+    <Carousel variant="dark">
       <Carousel.Item className="bg-back">
         <div className="container ">
           <Row className="p-5">
