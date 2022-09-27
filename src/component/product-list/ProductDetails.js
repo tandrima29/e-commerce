@@ -15,73 +15,15 @@ import CustomProduct from "./Product";
 import { FaChevronCircleDown } from "react-icons/fa";
 import axios from "axios";
 import BrandDetails from "./BrandDetails";
-const productDetails = [
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop1,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop2,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop3,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop4,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop5,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop6,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop7,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop8,
-    price: 250,
-  },
-  {
-    heading: "Oupidatat non",
-    size: "M/L/X/XL",
-    img: Shop9,
-    price: 250,
-  },
-];
 
 export default function ProductDetails() {
   const [productDetails, updateProductDetails] = useState([]);
 
   useEffect(() => {
     axios
-      .get(
-        "https://630722593a2114bac75a5755.mockapi.io/netflix-clone/top-10-to-watch"
-      )
+      .get("https://633092a2591935f3c891ff0d.mockapi.io/products")
       .then((response) => {
-        const result = response.data.content;
+        const result = response.data.products;
         console.log(response);
         updateProductDetails(result);
       })
@@ -133,8 +75,8 @@ export default function ProductDetails() {
                 return (
                   <Col sm="auto" md="4" lg="4" key={index} className=" mb-4">
                     <CustomProduct
-                      heading={details.heading}
-                      para={details.size}
+                      heading={details.title}
+                      para={details.desc}
                       image={details.img}
                       price={details.price}
                     ></CustomProduct>

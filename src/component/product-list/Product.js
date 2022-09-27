@@ -17,7 +17,7 @@ export default function CustomProduct(props) {
           <FaStar className="text-warning me-1" />
           <FaStar />
         </div>
-        <p className="text-center">${props.price}</p>
+        <p className="text-center">$650</p>
       </div>
     </div>
   );
