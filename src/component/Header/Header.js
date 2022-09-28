@@ -19,7 +19,7 @@ export default function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto widthclass">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Shop</Nav.Link>
+              <Nav.Link href="/products">Shop</Nav.Link>
               <Nav.Link href="#link">About</Nav.Link>
               <Nav.Link href="#link">Contact</Nav.Link>
             </Nav>

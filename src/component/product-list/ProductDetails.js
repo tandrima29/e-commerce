@@ -5,7 +5,8 @@ import "./styles.css";
 import CustomProduct from "./Product";
 import { FaChevronCircleDown } from "react-icons/fa";
 import axios from "axios";
-import BrandDetails from "./BrandDetails";
+import AboutBrands from "../About-Components/AboutBrands";
+import { Link } from "react-router-dom";
 
 export default function ProductDetails() {
   const [productDetails, updateProductDetails] = useState([]);
@@ -65,12 +66,17 @@ export default function ProductDetails() {
               {productDetails.map((details, index) => {
                 return (
                   <Col sm="auto" md="4" lg="4" key={index} className=" mb-4">
-                    <CustomProduct
-                      heading={details.title}
-                      para={details.desc}
-                      image={details.img}
-                      price={details.price}
-                    ></CustomProduct>
+                    <Link
+                      to="/product-details"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <CustomProduct
+                        heading={details.title}
+                        para={details.desc}
+                        image={details.img}
+                        price={details.price}
+                      ></CustomProduct>
+                    </Link>
                   </Col>
                 );
               })}
@@ -78,7 +84,7 @@ export default function ProductDetails() {
           </Col>
         </Row>
       </Container>
-      <BrandDetails />
+      <AboutBrands />
     </div>
   );
 }

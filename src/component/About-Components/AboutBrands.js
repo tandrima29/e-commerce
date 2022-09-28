@@ -55,6 +55,7 @@ export default function AboutBrands() {
                   <img
                     className="slick-slide-image brand-img"
                     src={slide.img}
+                    style={{ width: 100 }}
                   />
                 </div>
               ))}
