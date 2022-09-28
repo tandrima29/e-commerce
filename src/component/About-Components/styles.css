@@ -1,0 +1,33 @@
+.slider-wrapper {
+  width: 70%;
+  margin: auto;
+}
+.slick-slide {
+  text-align: center;
+  position: relative;
+}
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-slide-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #777777 !important;
+}
+.slick-dots li button::before {
+  font-size: 10px !important;
+}
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}

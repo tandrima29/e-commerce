@@ -1,12 +1,3 @@
-import Shop1 from "../../images/pd-1.jpg";
-import Shop2 from "../../images/pd-2.jpg";
-import Shop3 from "../../images/pd-3.jpg";
-import Shop4 from "../../images/pd-4.jpg";
-import Shop5 from "../../images/pd-5.jpg";
-import Shop6 from "../../images/pd-6.jpg";
-import Shop7 from "../../images/pd-7.jpg";
-import Shop8 from "../../images/pd-8.jpg";
-import Shop9 from "../../images/pd-9.jpg";
 import { useState, useEffect } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
