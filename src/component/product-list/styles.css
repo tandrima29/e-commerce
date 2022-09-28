@@ -1,0 +1,24 @@
+.pic-fluid {
+  max-width: 100%;
+}
+.product-design {
+  justify-content: space-between;
+}
+.back-1 {
+  background-color: #e9eef5;
+}
+.form-design {
+  border: none !important;
+}
+.img-fluid {
+  width: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.design-btn {
+  border-bottom: none !important;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.5s;
+  margin-top: 5%;
+}
