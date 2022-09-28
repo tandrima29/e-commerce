@@ -3,3 +3,32 @@
   margin-left: 10rem;
   margin-right: 10rem;
 } */
+.app {
+  font-family: roboto;
+}
+.ratingClass {
+  font-size: x-small;
+}
+.bg-back {
+  background-color: #efefef !important;
+}
+
+.slider-wrapper {
+  width: auto;
+  margin: auto;
+}
+.slick-slide {
+  text-align: center;
+  position: relative;
+}
+
+.slick-dots li button::before {
+  font-size: 20px !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #000 !important;
+}
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #000 !important;
+}
